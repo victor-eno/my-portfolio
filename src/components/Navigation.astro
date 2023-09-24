@@ -1,0 +1,154 @@
+---
+
+import '../styles/global.css'
+---
+
+<nav class="navbar">
+
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+    
+    <ul class="menu">
+    <li><a href="/about">About</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/">Home</a></li>
+    </ul>
+
+</nav>
+
+<style>
+
+    .navbar{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+
+    .navbar ul a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+    .navbar ul a:hover {
+        color: var(--white);
+    }
+
+    .theme-icon {
+        float: right;
+        padding: 15px;
+    }
+    .menu a {
+        color: var(--bic);
+    }
+    a:hover {
+        animation: bounce 1s;
+    }
+    @keyframes bounce {
+  0% , 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+/* Mobile Response */
+    .navbar .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+
+    .navbar .menu-icon {
+        padding: 28px 30px;
+        position: relative;
+        float: left;
+        cursor: pointer;
+    }
+
+    .navbar .menu-icon .nav-icon {
+        background-color: var(--white);
+        display: block;
+        height: 2px;
+        width: 30px;
+        position: relative;
+        transition: background .2s ease-out;
+    }
+
+    .navbar .menu-icon .nav-icon::before {
+        background-color: var(--white);
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 5px;
+        transition: all .2s ease-out;
+    }
+    .navbar .menu-icon .nav-icon:after {
+        background-color: var(--white);
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -5px;
+        transition: all .2s ease-out;
+    }
+
+    .navbar .menu-btn {
+        display: none;
+    }
+
+    .navbar .menu-btn:checked ~ .menu {
+        max-height: 240px;
+    }
+
+    .navbar .menu-btn:checked ~ .menu-icon .nav-icon {
+        background: transparent;
+    }
+    .navbar .menu-btn:checked ~ .menu-icon .nav-icon::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .navbar .menu-btn:checked ~ .menu-icon .nav-icon::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    html.dark {
+        background-color: #0d0950;
+        color: #fff;
+    }
+
+    .dark .navbar a {
+    color: #fff;
+    }
+
+    @media (min-width: 48em) {
+        .navbar li {
+            float: right;
+        }
+        .navbar li a {
+            padding: 20px 30px;
+        }
+        .navbar .menu {
+            clear: none;
+            float: left;
+            max-height: none;
+        }
+        .navbar .menu-icon {
+            display: none;
+        }
+    }
+
+</style>

@@ -1,0 +1,82 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+<div class="header"></div>
+<img class="header" src="https://proxy.everskies.com/a/https%3A%2F%2Fi.pinimg.com%2F564x%2F57%2F4c%2F95%2F574c95814adb0acd7a9fc00ae31063ac.jpg" alt="header" />
+
+<div class="pp-container">
+<img class="pp" src="https://proxy.everskies.com/a/https%3A%2F%2Fi.pinimg.com%2Foriginals%2F8d%2Fbe%2F96%2F8dbe966e815f9aa53bd12d9bb640b83c.gif" alt="pp" />
+
+<div class="bio-container">
+<div class="bio">
+	<p>
+		@user <br />
+		
+		text here text here text here text 
+		<br />
+		here text here text here text here 
+		<br /> 
+		text here text here text here text 
+		<br />
+		text here text here text here text 
+		<br />
+		text here text here text here text 
+		<br />
+		text here text here text here text 
+		
+		</p>
+		
+		</div></div></div>
+</Layout>
+
+<style>
+.header {
+  position: relative ;
+  width: 420px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  object-fit: fill;
+  border-radius: 0%;
+}
+.pp-container {
+  display: grid;
+  grid-template-columns: 20px 400px;
+  grid-template-rows: 100px;
+  grid-column-gap: 0px;
+  margin-top: 0px;
+}
+
+.bio-container {
+  display: grid;
+  grid-template-columns: 10px 400px;
+  grid-template-rows: 100px;
+  grid-column-gap: 0px;
+  margin-top: 30px;
+}
+
+.pp {
+position: relative;
+top: -70px;
+left: 20px;
+width: 100px;
+height: 100px;
+margin-top: 1px;
+margin-bottom: 5px;
+object-fit: cover;
+border-radius: 50%;
+border: 5px solid rgb(244, 8, 8);
+}
+
+.bio {
+ grid-area: 1/2;
+font-family: Georgia;
+font-size: 16px;
+letter-spacing: 1px;
+word-spacing: 5px;
+color: #2D2D2D;
+font-weight: 200;
+line-height:15px;
+}
+</style>

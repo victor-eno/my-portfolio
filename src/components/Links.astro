@@ -1,0 +1,33 @@
+---
+const platform = "github";
+const username = "withastro";
+import Socials from "./Socials.astro";
+---
+
+<ul class="links">
+    <li><Socials platform="Github" username="victor-eno" /></li>
+    <li><Socials platform="Twitter" username="vic_magnifico" /></li>
+</ul>
+
+<style>
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding: 28px 30px; 
+        gap: 4rem;
+        cursor: pointer;
+    }
+    ul, li {
+        text-decoration: none;
+        list-style: none;
+        overflow: hidden;
+    }
+
+    li {
+        list-style: none;
+    }
+
+</style>
+

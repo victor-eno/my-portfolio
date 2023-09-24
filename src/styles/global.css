@@ -1,0 +1,45 @@
+
+	:root {
+		--blue-gradient: #41c8ff;
+		--pink-gradient: #e61eff;
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+        --black: #000000;
+        --white: #ffffff;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+        font-family: system-ui, sans-serif;
+		color: var(--white);
+		background: var(--black);
+	}
+
+    *, *::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+	line-height: 1.6em;
+}
+
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+	

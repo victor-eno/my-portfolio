@@ -1,0 +1,47 @@
+---
+const { frontmatter } = Astro.props;
+
+import Layout from './Layout.astro';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/700.css';
+---
+
+<style>
+
+  .blog-content-wrapper {
+    margin: 0 auto;
+    max-width: 42em;
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3em;
+    font-weight: 700;
+    color: var(--bic);
+    margin: 0;
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--bic);
+    margin: 0;
+  }
+
+  h4 {
+    color: var(--bic);
+    font-weight: 100;
+  }
+
+</style>
+<Layout title={frontmatter.title}>
+  <div class="blog-content-wrapper">
+    <h1>{frontmatter.title}</h1>
+    <h2>Written by: {frontmatter.author}</h2>
+    <h4>{frontmatter.pubDate.slice(0,10)}</h4>
+    <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+  </div>
+</Layout>
