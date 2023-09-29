@@ -2,6 +2,7 @@
 const { frontmatter } = Astro.props;
 
 import Layout from './Layout.astro';
+import '../styles/global.css';
 import '@fontsource/poppins/500.css';
 import '@fontsource/poppins/700.css';
 ---
@@ -13,7 +14,7 @@ import '@fontsource/poppins/700.css';
       <h2>Written by: {frontmatter.author}</h2>
       <h4>{frontmatter.pubDate.slice(0,10)}</h4>
       <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
-      <slot />
+      <div class="contents"><slot /></div>
     </div>
   </section>
 </Layout>
@@ -32,9 +33,10 @@ import '@fontsource/poppins/700.css';
 
   h1 {
     font-family: 'Poppins', sans-serif;
+    line-height: 0.9em;
     font-size: 2.3em;
     font-weight: 700;
-    color: var(--bic);
+    color: var(--grad-two);
     margin: 0;
   }
 
@@ -42,13 +44,16 @@ import '@fontsource/poppins/700.css';
     font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
     font-weight: 500;
-    color: var(--bic);
-    margin: 0;
+    color: #d658f9;
+    margin: 10px 0;
   }
 
   h4 {
-    color: var(--bic);
-    font-weight: 100;
+    color: #f9e658;
+    font-weight: 400;
+  }
+  .contents {
+    color: rgb(189, 220, 248);
   }
 
 </style>

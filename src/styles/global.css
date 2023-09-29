@@ -13,7 +13,7 @@
 			(--grad-one), 
 			(--grad-two), 
 			(--grad-three), 
-			(--grad-four));
+			(---four));
 
 		--accent-gradient: linear-gradient(
 			45deg,
@@ -37,6 +37,7 @@ body {
     width: 100%;
     min-height: 100vh;
 	line-height: 1.6em;
+	background: linear-gradient(-45deg, #01182f, #01293e, #230327, #042835);
 }
 
 	code {

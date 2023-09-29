@@ -27,7 +27,7 @@ import '@fontsource/poppins/900.css';
           <article>
             <h1>{post.frontmatter.title}</h1>
             <p>{post.frontmatter.description}</p>
-            <a href={post.url}>Read more</a>
+            <a href={post.url}>Read more...</a>
           </article>
         ))}
       </div>
@@ -52,7 +52,8 @@ import '@fontsource/poppins/900.css';
     font-size: 16px;
   }
   .blog-content-wrapper a {
-    color: blue
+    color: rgb(107, 207, 254);
+    text-decoration: none;
   }
   article {
     margin: 8px;
@@ -72,7 +73,7 @@ import '@fontsource/poppins/900.css';
       background-clip: text;
       color: transparent;
   }
-  .unordered {
+  .unordered h1 {
     margin-bottom: 10px;
     background-image: linear-gradient(to left,  #3d510a, #efe558, #ee07bc, #48dbf8);
     background-size: 400% 400%;
@@ -91,6 +92,11 @@ import '@fontsource/poppins/900.css';
         background-clip: text;
         color: transparent;
     }
+
+    .blog-content-wrapper h1 {
+      color: #48dbf8;
+    }
+
 
   @media (max-height: 800px) {
     .blog-content-wrapper {

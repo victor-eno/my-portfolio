@@ -40,7 +40,7 @@ import '../styles/global.css'
     }
 
     .navbar ul a:hover {
-        color: var(--white);
+        color: var(--blue-gradient);
     }
 
     .theme-icon {
@@ -48,10 +48,15 @@ import '../styles/global.css'
         padding: 15px;
     }
     .menu a {
-        color: var(--bic);
+        background: linear-gradient(-45deg, #3d510a, #efe558, #ee07bc, #48dbf8);
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     a:hover {
         animation: bounce 1s;
+        color: var(--blue-gradient);
     }
     @keyframes bounce {
   0% , 100% {
@@ -78,16 +83,16 @@ import '../styles/global.css'
     }
 
     .navbar .menu-icon .nav-icon {
-        background-color: var(--white);
         display: block;
         height: 2px;
         width: 30px;
         position: relative;
+        background-color: linear-gradient(-45deg, #729ed7, #58c5ef, #230327, #042835);
         transition: background .2s ease-out;
     }
 
     .navbar .menu-icon .nav-icon::before {
-        background-color: var(--white);
+        background-color: var(--blue-gradient);
         content: '';
         display: block;
         height: 100%;
@@ -97,7 +102,7 @@ import '../styles/global.css'
         transition: all .2s ease-out;
     }
     .navbar .menu-icon .nav-icon:after {
-        background-color: var(--white);
+        background-color: var(--blue-gradient);
         content: '';
         display: block;
         height: 100%;
