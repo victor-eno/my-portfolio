@@ -2,11 +2,19 @@
 	:root {
 		--blue-gradient: #41c8ff;
 		--pink-gradient: #e61eff;
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
+		--grad-one: #01306e;
+		--grad-two: #58c5ef;
+		--grad-three: #230327;
+		--grad-four: #042835;
         --black: #000000;
         --white: #ffffff;
+		--background-gradient: linear-gradient(
+			-45deg, 
+			(--grad-one), 
+			(--grad-two), 
+			(--grad-three), 
+			(--grad-four));
+
 		--accent-gradient: linear-gradient(
 			45deg,
 			rgb(var(--accent)),
