@@ -6,8 +6,23 @@ import '@fontsource/poppins/500.css';
 import '@fontsource/poppins/700.css';
 ---
 
-<style>
+<Layout title={frontmatter.title}>
+  <section>
+    <div class="blog-content-wrapper">
+      <h1>{frontmatter.title}</h1>
+      <h2>Written by: {frontmatter.author}</h2>
+      <h4>{frontmatter.pubDate.slice(0,10)}</h4>
+      <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+      <slot />
+    </div>
+  </section>
+</Layout>
 
+<style>
+  section {
+    padding-top: 100px;
+    margin: 0 10px 0 10px;
+  }
   .blog-content-wrapper {
     margin: 0 auto;
     max-width: 42em;
@@ -37,11 +52,3 @@ import '@fontsource/poppins/700.css';
   }
 
 </style>
-<Layout title={frontmatter.title}>
-  <div class="blog-content-wrapper">
-    <h1>{frontmatter.title}</h1>
-    <h2>Written by: {frontmatter.author}</h2>
-    <h4>{frontmatter.pubDate.slice(0,10)}</h4>
-    <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
-  </div>
-</Layout>
