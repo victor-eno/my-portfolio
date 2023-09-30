@@ -37,18 +37,31 @@ body {
     width: 100%;
     min-height: 100vh;
 	line-height: 1.6em;
-	background: linear-gradient(-45deg, #01182f, #01293e, #230327, #042835);
+	background: linear-gradient(-45deg, #012347, #011f36, #200149, #122124);
 }
 
 	code {
 		font-family:
+			'monospace'
 			Menlo,
 			Monaco,
 			Lucida Console,
 			Liberation Mono,
 			DejaVu Sans Mono,
 			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+			Courier New;
+	}
+	img {
+		height: 400px;
+		width: 700px;
+		object-fit: fill;
+	}
+	@media (max-width: 800px) {
+		img {
+			height: 300px;
+		    width: 380px;
+		    object-fit: fill;
+			margin: 35px;
+		}
 	}
 	

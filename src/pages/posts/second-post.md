@@ -10,6 +10,9 @@ image:
 pubDate: 2022-07-08
 tags: ["astro", "blogging", "learning in public", "successes"]
 ---
+![img](../../assets/portraits.png)
+
+<br></br>
 
 # Extration from:
 ## Digging Into The Display Property: The Two Values Of Display - Rachel Andrew

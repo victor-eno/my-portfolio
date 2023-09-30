@@ -5,15 +5,16 @@ title: 'Understanding The Concept of Web Reality'
 pubDate: 2022-07-01
 description: 'Web pages and applications are often constructed by composing various components together. Components can communicate with each other by passing data and triggering events.'
 author: 'Victor Eno'
-image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public"]
 ---
+![img](../../assets/explorer.jpg)
+
+<br></br>
 
 ## PART 1: COMPONENTS
 Components are a **reuseable** and **mudular**(self contained) unit of code that encapsulate specific functionality, design or behaviour. They are more like the **building blocks of a web application's user interface and functionality**.
 
+<br></br>
 
 ### Special features:
 1. Modularity:
@@ -38,10 +39,14 @@ Since components are isolated units, they are easier to test and debug. Develope
 10. Performance Optimization:
 Frameworks often optimize rendering by updating only the components that have changed, rather than re-rendering the entire page. This improves application performance and responsiveness.
 
+<br></br>
+
 ## Example:
 HTML Components (HTCs) are a legacy technology[1] used to implement components in script as Dynamic HTML (DHTML) "behaviors"[2] in the Microsoft Internet Explorer web browser. Such files typically use an .htc extension and the "text/x-component" MIME type.[3]
 
 An HTC is typically an HTML file (with JScript / VBScript) and a set of elements that define the component. This helps to organize behavior encapsulated in script modules that can be attached to parts of a Webpage DOM.
+
+<br></br>
 
 ```html
 <body>
@@ -50,5 +55,6 @@ An HTC is typically an HTML file (with JScript / VBScript) and a set of elements
 </ul>
 </body>
 ```
+<br></br>
 
 In this example, the li element is given the behavior defined by "hilite.htc" (a file that contains JScript code defining highlight/lowlight actions on mouse over). The same hilite.htc can then be given to any element in the HTML page - thus encapsulating the behavior defined by this file.

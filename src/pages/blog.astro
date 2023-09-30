@@ -27,7 +27,7 @@ import '@fontsource/poppins/900.css';
           <article>
             <h1>{post.frontmatter.title}</h1>
             <p>{post.frontmatter.description}</p>
-            <a href={post.url}>Read more...</a>
+              <a href={post.url}>Read more...</a>
           </article>
         ))}
       </div>
@@ -36,7 +36,7 @@ import '@fontsource/poppins/900.css';
 
 <style>
   section {
-    padding-top: 80px;
+    padding: 80px 10px 0px 10px;
   }
   .blog-content-wrapper {
     padding-top: 50px;
@@ -50,10 +50,14 @@ import '@fontsource/poppins/900.css';
   }
   .blog-content-wrapper p {
     font-size: 16px;
+    color: rgb(189, 220, 248);
   }
   .blog-content-wrapper a {
     color: rgb(107, 207, 254);
     text-decoration: none;
+    font-family: 'Poppins', Courier, monospace;
+    font-weight: 900;
+    cursor: pointer;
   }
   article {
     margin: 8px;
@@ -94,7 +98,7 @@ import '@fontsource/poppins/900.css';
     }
 
     .blog-content-wrapper h1 {
-      color: #48dbf8;
+      color: #f0a7f9;
     }
 
 
