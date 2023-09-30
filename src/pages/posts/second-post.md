@@ -5,8 +5,8 @@ title: Digging Into The Display Property
 author: Victor 
 description: "While it may seem unusual at first for those of us who have been doing CSS for many years, I think these changes really help to explain what is going on when we change the value of display on an element."
 image:
-    url: "https://docs.astro.build/assets/arc.webp"
-    alt: "Thumbnail of Astro arcs."
+    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    alt: 'The full Astro logo.'
 pubDate: 2022-07-08
 tags: ["astro", "blogging", "learning in public", "successes"]
 ---

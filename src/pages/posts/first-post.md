@@ -5,6 +5,9 @@ title: 'Understanding The Concept of Web Reality'
 pubDate: 2022-07-01
 description: 'Web pages and applications are often constructed by composing various components together. Components can communicate with each other by passing data and triggering events.'
 author: 'Victor Eno'
+image:
+    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public"]
 ---
 ![img](../../assets/explorer.jpg)
